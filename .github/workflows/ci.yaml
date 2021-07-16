@@ -35,6 +35,7 @@ jobs:
           failonscore: 3
       - name: Upload Test results2
         uses: actions/upload-artifact@master
+        if: ${{ always() }}
         with:
            name: Depcheck report2
            path: ${{github.workspace}}/reports
