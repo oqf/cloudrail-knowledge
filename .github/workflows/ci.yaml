@@ -32,7 +32,7 @@ jobs:
           project: 'cloudrail-knowledge Dependency check2'
           path: '.'
           format: 'HTML'
-          failonscore: 3
+          failonscore: 3.99
       - name: Upload Test results2
         uses: actions/upload-artifact@master
         if: ${{ always() }}
